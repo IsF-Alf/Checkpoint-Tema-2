@@ -1,0 +1,267 @@
+:root {
+    --fondoMain: #e1feff;
+    --colorLetra: white;
+    --fondoSecciones: #5f9ea0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--fondoSecciones);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anchorNav {
+    padding-left: 10px;
+    width: 40vw;
+}
+
+.anchorNav a {
+    text-decoration: none;
+    background-color: var(--colorLetra);
+    color: var(--fondoSecciones);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.anchorNav a:hover {
+    background-color: var(--fondoMain);
+}
+
+h1 {
+    font-size: 35px;
+    padding-right: 10px;
+    color: var(--colorLetra);
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imagenes/banner.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+main {
+    color: var(--colorLetra);
+    width: 100%;
+    min-height: 145vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: var(--fondoMain);
+}
+
+.sectPrin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 30vw;
+}
+
+.sectPrin2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 26vw;
+}
+
+.sched {
+    width: 26vw;
+    height: 30px;
+    padding-top: 4px;
+}
+
+h3 {
+    margin-top: 10px;
+    background-color: var(--fondoSecciones);
+    width: 30vw;
+    text-align: center;
+    height: 30px;
+    padding-top: 4px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 40vh;
+    background-color: var(--fondoSecciones);
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.imgtarj {
+    border-radius: 20px;
+    width: 80%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.descTar {
+    padding-top: 4px;
+    display: flex;
+    width: 80%;
+}
+
+.listYTab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 55vh;
+    width: 23vw;
+    background-color: var(--fondoSecciones);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+ul {
+    width: 10vw;
+    height: 15vh;
+}
+
+li {
+    height: 5vh;
+}
+
+table {
+    border: solid 1px var(--colorLetra);
+    width: 20vw;
+}
+
+th,
+tr,
+td {
+    width: 10vw;
+    height: 8vh;
+    border: solid 1px var(--colorLetra);
+    text-align: center;
+}
+
+
+footer {
+    color: var(--colorLetra);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+    border-top: solid 1px black;
+    background-color: var(--fondoSecciones);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+fieldset {
+    border: solid 1px #00000024;
+}
+
+.Submit {
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.cohoroMind {
+    font-weight: bold;
+}
+
+.contMail {
+    color: var(--colorLetra);
+}
+
+.Subscribe {
+    color: var(--colorLetra);
+    background-color: var(--fondoSecciones);
+}
+
+/* TABLET */
+@media (min-width:768px) and (max-width: 1023px) {
+
+    .sectPrin {
+        width: 45vw;
+    }
+
+h3{
+    width: 40vw;
+}
+
+    .tarjetas {
+        padding: 0;
+        width: 40vw;
+    }
+
+    table {
+        width: 25vw;
+    }
+
+    .sched {
+        width: 40vw;
+    }
+
+    .listYTab {
+        width: 40vw;
+    }
+
+    .sectPrin2 {
+        width: 45vw;
+    }
+
+}
+
+/* MOBILE */
+@media(max-width:767px) {
+
+    main {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anchorNav {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectPrin {
+        width: 90vw;
+    }
+
+    .sectPrin2 {
+        width: 90vw;
+    }
+
+    .tarjetas {
+        width: 85vw;
+    }
+
+    .listYTab {
+        width: 85vw;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
